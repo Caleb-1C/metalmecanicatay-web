@@ -185,12 +185,12 @@ nav a:hover {
 
   .hero h1 {
     font-size: 0.8em;           
-    line-height: 1.2;
+    line-height: 0.8;
     margin-bottom: 10px;
   }
 
   .hero p {
-    font-size: 0.4em;         
+    font-size: 0.8em;         
     max-width: 90%;           
   }
 }
@@ -399,8 +399,7 @@ p b {
 
   .certificado-texto {
     padding: 10px;
-    font-size: 0.6em;
-    text-align: justify;          
+    font-size: 0.6em;         
   }
 
   .btn-certificacion {
