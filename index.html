@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<head>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton+SC&family=Asset&family=BBH+Bartle&family=Black+Ops+One&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Bubblegum+Sans&family=Codystar:wght@300;400&family=Croissant+One&family=Diplomata&family=Eagle+Lake&family=Elsie:wght@400;900&family=Holtwood+One+SC&family=Lexend+Zetta:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montenegrin+Gothic+One&family=Nova+Round&family=Oswald:wght@200..700&family=Peralta&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ:wght@100..400&family=Prosto+One&family=Protest+Riot&family=Rochester&family=Rubik+Dirt&family=Rubik+Doodle+Shadow&family=Sail&family=Sekuya&family=Yesteryear&family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Metalmecánica TAY</title>
+  <!-- Aquí conectamos el CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
+<header>
+  <img src="logo/logo.png" alt="Logo Metalmecánica TAY" class="logo">
+  <h1>Metalmecánica TAY</h1>
+  <nav>
+    <a href="#quienes-somos">Quiénes Somos</a>
+    <a href="#certificacion">Certificación</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#contacto">Contacto</a>
+    <a href="index-en.html" class="idioma">ENGLISH</a>
+  </nav>
+</header>
+
+  <section id="inicio" class="hero">
+    <h2><b>BIENVENIDOS</b></h2>
+    <p>soluciones en mecanizado de precisión y soldaduras especiales</p>
+  </section>
+
+  <section id="quienes-somos">
+  <h2>Quiénes Somos</h2>
+  <p>
+    En Metalmecánica TAY somos especialistas en mecanizado de precisión y soldaduras especiales.
+    Nuestro taller cuenta con tecnología avanzada y con un equipo altamente capacitado.
+  </p>
+  <img src="imagenes/taller.jpg" alt="Taller Metalmecánica TAY" class="imagen-seccion">
+  <p>Nos enfocamos en entregar productos y servicios de alto estándar, adaptados a los requerimientos
+    específicos de cada proyecto, garantizando eficiencia, durabilidad y confiabilidad en cada
+    uno de nuestros trabajos.
+  </p>
+  <p>
+    Nuestra experiencia y enfoque profesional nos permiten posicionarnos
+    como un aliado estratégico para la industria, aportando soluciones técnicas sólidas y oportunas.
+  </p>  
+</section>
+
+<section id="certificacion-es" class="certificacion-section">
+  <h2>Certificación</h2>
+  <div class="certificacion-content">
+    <div class="certificado-img">
+      <img src="imagenes/Certificación ISO-CQS.JPG" alt="Certificado ISO 9001:2015" class="certificado">
+    </div>
+    <div class="certificado-texto">
+      <p>
+        Contamos con la certificación oficial <b>ISO 9001:2015</b>, que garantiza
+        la calidad y transparencia de nuestros procesos.
+      </p>
+      <p>
+        Alcance de la certificación:
+        <span class="resaltado">Fabricación y Reparación de componentes y sistemas hidráulicos, neumáticos y metalmecánicos, incluyendo trabajos de taller asociados.</span>
+      </p>
+      <p>
+        Este reconocimiento respalda nuestro compromiso con la precisión y la excelencia.
+      </p>
+      <div class="contenedor-certificacion">
+        <a href="https://certificate.cqs-cms.co.uk/" class="btn-certificacion" target="_blank">
+          <img src="logo/CQS-CMS.png" alt="Logo Certificador" class="icono-certificador">
+          Verificar Certificación
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Fabricación y Reparación de Componentes y Sistemas Hidráulicos.</li>
+      <li>Fabricación y Reparación de Componentes y Sistemas Neumáticos y Metalmecánicos.</li>
+      <li>Fabricación y Reparación de Piezas.</li>
+      <li>Soldadura Técnica Especializada <span class="resaltado">(MIG, TIG, Arco)</span>.</li>
+      <li>Cilindros Hidráulicos y Neumáticos.</li>
+      <li>Engranajes y Poleas.</li>
+      <li>Consultoría en Metalurgia.</li>
+    </ul>
+  </section>
+
+
+<section class="galeria-section">
+  <h2>Algunos de NUESTROS TRABAJOS:</h2>
+  <div class="galeria">
+    <a data-fancybox="gallery" href="imagenes/1.png">
+      <img src="imagenes/1.png" alt="Imagen 1">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/2.png">
+      <img src="imagenes/2.png" alt="Imagen 2">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/3.png">
+      <img src="imagenes/3.png" alt="Imagen 3">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/4.png">
+      <img src="imagenes/4.png" alt="Imagen 4">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/6.png">
+      <img src="imagenes/6.png" alt="Imagen 6">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/7.png">
+      <img src="imagenes/7.png" alt="Imagen 7">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/9.png">
+      <img src="imagenes/9.png" alt="Imagen 9">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/11.png">
+      <img src="imagenes/11.png" alt="Imagen 11">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/16.png">
+      <img src="imagenes/16.png" alt="Imagen 16">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/14.png">
+      <img src="imagenes/14.png" alt="Imagen 14">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/19.png">
+     <img src="imagenes/19.png" alt="Imagen 19">
+    </a>
+    <a data-fancybox="gallery" href="imagenes/20.png">
+      <img src="imagenes/20.png" alt="Imagen 20">
+    </a>
+  </div>
+</section>
+  
+<section id="clientes" class="clientes">
+  <h2>Algunos de NUESTROS CLIENTES:</h2>
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide"><img src="logo/Gasco.png" alt="Cliente 1"></div>
+      <div class="slide"><img src="logo/Watt-s (NBG).png" alt="Cliente 2"></div>
+      <div class="slide"><img src="logo/3F.png" alt="Cliente 3"></div>
+      <div class="slide"><img src="logo/Cantabria-2.png" alt="Cliente 4"></div>
+      <div class="slide"><img src="logo/Eternity-2.png" alt="Cliente 5"></div>
+      <div class="slide"><img src="logo/Hoffens.png" alt="Cliente 6"></div>
+      <div class="slide"><img src="logo/Jaras Diesel.png" alt="Cliente 7"></div>
+      <div class="slide"><img src="logo/RENTEQ-2.png" alt="Cliente 8"></div>
+      <div class="slide"><img src="logo/EMAQ-1.png" alt="Cliente 9"></div>
+      <div class="slide"><img src="logo/Alfa Group-1.png" alt="Cliente 10"></div>
+      <div class="slide"><img src="logo/Santa Laura-2.png" alt="Cliente 11"></div>
+      <div class="slide"><img src="logo/Valls-1.png" alt="Cliente 12"></div>
+      <div class="slide"><img src="logo/Marfrig-2.png" alt="Cliente 13"></div>
+      <div class="slide"><img src="logo/Consorcio Santa Marta-1.png" alt="Cliente 14"></div>
+      <div class="slide"><img src="logo/Melón-1.png" alt="Cliente 15"></div>
+      <div class="slide"><img src="logo/Drag Pharma-1.png" alt="Cliente 16"></div>
+      <div class="slide"><img src="logo/Perfimet-1.png" alt="Cliente 17"></div>
+      <div class="slide"><img src="logo/Geo Barra.jpg" alt="Cliente 18"></div>
+      <div class="slide"><img src="logo/Mylpan-1.png" alt="Cliente 19"></div>
+      <div class="slide"><img src="logo/ICB-1.png" alt="Cliente 20"></div>
+      <div class="slide"><img src="logo/Arcor-1.png" alt="Cliente 21"></div>
+      <div class="slide"><img src="logo/Santa Rosa-1.png" alt="Cliente 22"></div>
+      <div class="slide"><img src="logo/Romeral-1.png" alt="Cliente 23"></div>
+      <div class="slide"><img src="logo/Mimet-3.png" alt="Cliente 24"></div>
+      <div class="slide"><img src="logo/Villalba-2.png" alt="Cliente 25"></div>
+      <div class="slide"><img src="logo/Proquiel.png" alt="Cliente 26"></div>
+      <div class="slide"><img src="logo/TyPack.png" alt="Cliente 27"></div>
+
+      <div class="slide"><img src="logo/Gasco.png" alt="Cliente 1"></div>
+      <div class="slide"><img src="logo/Watt-s (NBG).png" alt="Cliente 2"></div>
+      <div class="slide"><img src="logo/3F.png" alt="Cliente 3"></div>
+      <div class="slide"><img src="logo/Cantabria-2.png" alt="Cliente 4"></div>
+      <div class="slide"><img src="logo/Eternity-2.png" alt="Cliente 5"></div>
+      <div class="slide"><img src="logo/Hoffens.png" alt="Cliente 6"></div>
+      <div class="slide"><img src="logo/Jaras Diesel.png" alt="Cliente 7"></div>
+      <div class="slide"><img src="logo/RENTEQ-2.png" alt="Cliente 8"></div>
+      <div class="slide"><img src="logo/EMAQ-1.png" alt="Cliente 9"></div>
+      <div class="slide"><img src="logo/Alfa Group-1.png" alt="Cliente 10"></div>
+      <div class="slide"><img src="logo/Santa Laura-2.png" alt="Cliente 11"></div>
+      <div class="slide"><img src="logo/Valls-1.png" alt="Cliente 12"></div>
+      <div class="slide"><img src="logo/Marfrig-2.png" alt="Cliente 13"></div>
+      <div class="slide"><img src="logo/Consorcio Santa Marta-1.png" alt="Cliente 14"></div>
+      <div class="slide"><img src="logo/Melón-1.png" alt="Cliente 15"></div>
+      <div class="slide"><img src="logo/Drag Pharma-1.png" alt="Cliente 16"></div>
+      <div class="slide"><img src="logo/Perfimet-1.png" alt="Cliente 17"></div>
+      <div class="slide"><img src="logo/Geo Barra.jpg" alt="Cliente 18"></div>
+      <div class="slide"><img src="logo/Mylpan-1.png" alt="Cliente 19"></div>
+      <div class="slide"><img src="logo/ICB-1.png" alt="Cliente 20"></div>
+      <div class="slide"><img src="logo/Arcor-1.png" alt="Cliente 21"></div>
+      <div class="slide"><img src="logo/Santa Rosa-1.png" alt="Cliente 22"></div>
+      <div class="slide"><img src="logo/Romeral-1.png" alt="Cliente 23"></div>
+      <div class="slide"><img src="logo/Mimet-3.png" alt="Cliente 24"></div>
+      <div class="slide"><img src="logo/Villalba-2.png" alt="Cliente 25"></div>
+      <div class="slide"><img src="logo/Proquiel.png" alt="Cliente 26"></div>
+      <div class="slide"><img src="logo/TyPack.png" alt="Cliente 27"></div>
+
+      <div class="slide"><img src="logo/Gasco.png" alt="Cliente 1"></div>
+      <div class="slide"><img src="logo/Watt-s (NBG).png" alt="Cliente 2"></div>
+      <div class="slide"><img src="logo/3F.png" alt="Cliente 3"></div>
+      <div class="slide"><img src="logo/Cantabria-2.png" alt="Cliente 4"></div>
+      <div class="slide"><img src="logo/Eternity-2.png" alt="Cliente 5"></div>
+      <div class="slide"><img src="logo/Hoffens.png" alt="Cliente 6"></div>
+      <div class="slide"><img src="logo/Jaras Diesel.png" alt="Cliente 7"></div>
+      <div class="slide"><img src="logo/RENTEQ-2.png" alt="Cliente 8"></div>
+      <div class="slide"><img src="logo/EMAQ-1.png" alt="Cliente 9"></div>
+      <div class="slide"><img src="logo/Alfa Group-1.png" alt="Cliente 10"></div>
+      <div class="slide"><img src="logo/Santa Laura-2.png" alt="Cliente 11"></div>
+      <div class="slide"><img src="logo/Valls-1.png" alt="Cliente 12"></div>
+      <div class="slide"><img src="logo/Marfrig-2.png" alt="Cliente 13"></div>
+      <div class="slide"><img src="logo/Consorcio Santa Marta-1.png" alt="Cliente 14"></div>
+      <div class="slide"><img src="logo/Melón-1.png" alt="Cliente 15"></div>
+      <div class="slide"><img src="logo/Drag Pharma-1.png" alt="Cliente 16"></div>
+      <div class="slide"><img src="logo/Perfimet-1.png" alt="Cliente 17"></div>
+      <div class="slide"><img src="logo/Geo Barra.jpg" alt="Cliente 18"></div>
+      <div class="slide"><img src="logo/Mylpan-1.png" alt="Cliente 19"></div>
+      <div class="slide"><img src="logo/ICB-1.png" alt="Cliente 20"></div>
+      <div class="slide"><img src="logo/Arcor-1.png" alt="Cliente 21"></div>
+      <div class="slide"><img src="logo/Santa Rosa-1.png" alt="Cliente 22"></div>
+      <div class="slide"><img src="logo/Romeral-1.png" alt="Cliente 23"></div>
+      <div class="slide"><img src="logo/Mimet-3.png" alt="Cliente 24"></div>
+      <div class="slide"><img src="logo/Villalba-2.png" alt="Cliente 25"></div>
+      <div class="slide"><img src="logo/Proquiel.png" alt="Cliente 26"></div>
+      <div class="slide"><img src="logo/TyPack.png" alt="Cliente 27"></div>
+
+      <div class="slide"><img src="logo/Gasco.png" alt="Cliente 1"></div>
+      <div class="slide"><img src="logo/Watt-s (NBG).png" alt="Cliente 2"></div>
+      <div class="slide"><img src="logo/3F.png" alt="Cliente 3"></div>
+      <div class="slide"><img src="logo/Cantabria-2.png" alt="Cliente 4"></div>
+      <div class="slide"><img src="logo/Eternity-2.png" alt="Cliente 5"></div>
+      <div class="slide"><img src="logo/Hoffens.png" alt="Cliente 6"></div>
+      <div class="slide"><img src="logo/Jaras Diesel.png" alt="Cliente 7"></div>
+      <div class="slide"><img src="logo/RENTEQ-2.png" alt="Cliente 8"></div>
+      <div class="slide"><img src="logo/EMAQ-1.png" alt="Cliente 9"></div>
+      <div class="slide"><img src="logo/Alfa Group-1.png" alt="Cliente 10"></div>
+      <div class="slide"><img src="logo/Santa Laura-2.png" alt="Cliente 11"></div>
+      <div class="slide"><img src="logo/Valls-1.png" alt="Cliente 12"></div>
+      <div class="slide"><img src="logo/Marfrig-2.png" alt="Cliente 13"></div>
+      <div class="slide"><img src="logo/Consorcio Santa Marta-1.png" alt="Cliente 14"></div>
+      <div class="slide"><img src="logo/Melón-1.png" alt="Cliente 15"></div>
+      <div class="slide"><img src="logo/Drag Pharma-1.png" alt="Cliente 16"></div>
+      <div class="slide"><img src="logo/Perfimet-1.png" alt="Cliente 17"></div>
+      <div class="slide"><img src="logo/Geo Barra.jpg" alt="Cliente 18"></div>
+      <div class="slide"><img src="logo/Mylpan-1.png" alt="Cliente 19"></div>
+      <div class="slide"><img src="logo/ICB-1.png" alt="Cliente 20"></div>
+      <div class="slide"><img src="logo/Arcor-1.png" alt="Cliente 21"></div>
+      <div class="slide"><img src="logo/Santa Rosa-1.png" alt="Cliente 22"></div>
+      <div class="slide"><img src="logo/Romeral-1.png" alt="Cliente 23"></div>
+      <div class="slide"><img src="logo/Mimet-3.png" alt="Cliente 24"></div>
+      <div class="slide"><img src="logo/Villalba-2.png" alt="Cliente 25"></div>
+      <div class="slide"><img src="logo/Proquiel.png" alt="Cliente 26"></div>
+      <div class="slide"><img src="logo/TyPack.png" alt="Cliente 27"></div>
+    </div>
+  </div>
+</section>
+
+<section id="cotizacion">
+  <h2>Solicita tu Cotización</h2>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="detalle">Detalle del trabajo:</label>
+    <textarea id="detalle" name="detalle" rows="4" required></textarea>
+
+    <button type="submit">ENVIAR</button>
+  </form>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>¿Quieres más información? Escríbenos y te responderemos a la brevedad.</p>
+  <p><i class="fas fa-phone"></i> +56 9 6346 1382</p>
+  <p><i class="fas fa-envelope"></i> metalmecanica.tay@gmail.com</p>
+</section>
+
+<footer>
+  <div class="footer-contenido">
+    <img src="logo/TAY (3D-2)(NBG).png" alt="Logo Metalmecánica TAY" class="logo-rotando">
+    <p>© 2026 Metalmecánica TAY - Todos los derechos reservados</p>
+    <p>San Bernardo, Región Metropolitana - Chile</p>
+    <p>Email: metalmecanica.tay@gmail.com | Tel: +56 9 6346 1382</p>
+    <div class="redes">
+      <a href="https://www.facebook.com/profile.php?id=61591603688807" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+<script>
+    Fancybox.bind("[data-fancybox]", {
+      closeButton: "outside",
+      backdropClick: true,
+      Keyboard: {
+        Escape: "close"
+      },
+      on: {
+        destroy: () => {
+          document.querySelectorAll(".fancybox__container").forEach(el => {
+            el.remove();
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
