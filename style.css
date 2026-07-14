@@ -385,6 +385,31 @@ p b {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .certificacion-content {
+    flex-direction: column;  
+    text-align: center;      
+  }
+
+  .certificacion-content img {
+    max-width: 90%;           
+    height: auto;             
+    margin: 0 auto;           
+  }
+
+  .certificado-texto {
+    padding: 10px;
+    font-size: 0.6em;          
+  }
+
+  .btn-certificacion {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+  }
+}
+
 #servicios {
   background: #ffffff;
   font-family: "Bricolage Grotesque", sans-serif;
