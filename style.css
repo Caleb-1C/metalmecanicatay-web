@@ -106,22 +106,25 @@ nav a:hover {
 
 @media (max-width: 768px) {
   header {
+    position: static;
+    flex-direction: column; 
+    align-items: center;
     background: none;       /* sin fondo */
     box-shadow: none;       /* sin sombra */
-    border-radius: 0;       /* sin esquinas redondeadas */
-    padding: 10px;          /* más compacto */
-    align-items: center;
+    border-radius: 0;
+    padding: 10px;
   }
 
   nav {
-    flex-direction: column; /* menú en columna */
-    margin: 0;
+    flex-direction: column;   
+    margin: 10px 0 0 0;
     align-items: center;
   }
 
   nav a {
-    margin: 8px 0;
-    font-size: 1.1em;
+    margin: 8px 0;            
+    font-size: 1.1em;         
+    padding: 10px 20px;
   }
 
   .logo {
