@@ -399,14 +399,15 @@ p b {
 
   .certificado-texto {
     padding: 10px;
-    font-size: 0.6em;          
+    font-size: 0.6em;
+    text-align: justify;          
   }
 
   .btn-certificacion {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 20px;
-    font-size: 1.1em;
+    padding: 8px 16px;
+    font-size: 0.8em;
   }
 }
 
