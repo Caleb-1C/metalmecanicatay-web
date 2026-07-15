@@ -189,25 +189,26 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;            /* ✅ menos padding lateral */
+    padding: 20px;            
     background-size: cover;
     background-position: center;
-    width: 100%;              /* ✅ ocupa todo el ancho */
-    box-sizing: border-box;   /* ✅ padding incluido en el ancho */
+    width: 100%;              
+    box-sizing: border-box;  
   }
 
   .hero h1 {
-    font-size: 1.6em;         /* ✅ más proporcional en móviles */
+    font-size: 1.6em;         
     line-height: 1.3;
-    margin: 0 auto 10px auto; /* ✅ centrado sin desbordar */
-    max-width: 95%;           /* ✅ evita overflow lateral */
+    margin: 0 auto 10px auto; 
+    max-width: 95%;           
     word-wrap: break-word;
   }
 
   .hero p {
-    font-size: 1em;           /* ✅ legible */
+    font-size: 1em;          
     margin: 6px auto;
-    max-width: 95%;           /* ✅ ocupa casi todo el ancho */
+    width: 95%;  
+    max-width: 95%;       
   }
 }
 
