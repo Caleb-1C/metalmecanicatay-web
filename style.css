@@ -658,3 +658,43 @@ footer .redes a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  section, 
+  #quienes-somos, 
+  .certificacion-section, 
+  .galeria-section, 
+  #servicios, 
+  #cotizacion, 
+  #contacto {
+    max-width: 100%;       
+    margin: 0;             
+    padding: 20px;         
+    box-sizing: border-box;
+  }
+
+  .hero h1 {
+    font-size: 1.8em;      
+    max-width: 95%;        
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+
+  .hero p {
+    font-size: 1em;        
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .certificado-texto {
+    font-size: 1em;        
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .certificacion-content img,
+  .certificado {
+    max-width: 100%;       
+    height: auto;
+  }
+}
