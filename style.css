@@ -113,10 +113,21 @@ nav a:hover {
   font-size: 3.2em;
   text-align: center;
   margin-bottom: 60px;
+  filter: grayscale(100%) blur(3px);              
+  transition: filter 0.5s ease-in-out;  
+}
+
+.hero:hover {
+  filter: grayscale(0%);                
 }
 
 .hero h2 {
   text-align: center;
+}
+
+.hero p {
+  margin: 5px 0;
+  font-size: 0.8em;            
 }
 
 @media (max-width: 768px) {
@@ -152,19 +163,19 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;           
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
 
   nav a {
     display: block;
-    width: 100%;
-    padding: 12px 0;          
-    margin: 0;                
+    width: 100%;             
+    padding: 12px 0;         
+    margin: 0;               
     text-align: center;
-    box-sizing: border-box;   
+    box-sizing: border-box;  
     color: #00a000;
     font-weight: bold;
     text-decoration: none;
@@ -222,6 +233,10 @@ nav a:hover {
     width: auto;
   }
 
+  .columnas {
+    grid-template-columns: 1fr;
+  }
+
   .certificado {
     max-width: 100%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
@@ -272,27 +287,56 @@ section h2 {
 }
 
 #quienes-somos {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-  text-align: justify;
+  text-align: center;
   padding: 60px 20px;
-  width: 100%;         
-  margin: 0;      
   background: #f4f4f4;
-  margin-bottom: 30px;
   border-radius: 8px;
-  box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  margin-bottom: 60px;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#quienes-somos .columna img {
+  width: 100%;                 
+  height: 280px;               
+  object-fit: cover;          
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+#quienes-somos .columna img:hover {
+  transform: scale(1.01);              
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: 2px solid #00a000;           
+}
+
+.columna p {
+  font-size: 1em;
+  color: #333;
+  text-align: justify;
 }
 
 #quienes-somos h2 {
   color: #00a000;
   margin-bottom: 20px;
+}
+
+#quienes-somos p {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #555;
+  text-align: center;
+  font-size: 1em;        
+  line-height: 1.5;      
+  font-weight: 300;      
+  max-width: 75%;       
+  margin: 0 auto 12px auto;
 }
 
 .imagen-seccion {
@@ -351,7 +395,7 @@ p b {
 }
 
 .certificado-img img {
-  max-width: 400px;
+  max-width: 600px;
   border: 2px solid #ccc;
   border-radius: 8px;
 }
@@ -378,56 +422,112 @@ p b {
   color: #555;
 }
 
-.btn-certificacion {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin: 20px auto;
-  padding: 12px 24px;
-  background-color: #00a000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-
 .contenedor-certificacion {
   display: flex;
   justify-content: center;   
   align-items: center;       
-  width: 100%;               
+  width: 100%;
+  margin-top: 12px;          
+}
+
+
+.certificado-texto {
+  width: 100%;
+  font-size: 1em;
+  color: #555;
+  margin-top: 10px;   
+}
+
+.alcance-ajustado {
+  line-height: 1.2;  
+  display: inline-block;
+}
+
+.btn-certificacion {
+  display: block;             
+  width: 100%;                
+  max-width: 700px;           
+  margin: 30px auto;          
+  padding: 18px 0;           
+  background: linear-gradient(90deg, #00a000, #009900); 
+  color: #fff;
+  font-size: 1.2em;           
+  font-weight: 600;           
+  text-decoration: none;
+  border-radius: 8px;         
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); 
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-family: "Oswald", sans-serif; 
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 1.1em;                   
+  text-align: center;
 }
 
 .btn-certificacion:hover {
-  background-color: #007500;
+  transform: scale(1.02);     
+  background: linear-gradient(90deg, #009900, #007500);
 }
 
 .icono-certificador {
-  height: 24px;                     
+  height: 28px; 
   width: auto;
-  align-items: center;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 #servicios {
-  padding: 60px 20px;          
-  margin: 0 auto 30px auto;    
-  background: #ffffff;         
-  border-radius: 8px;          
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2); 
-  box-sizing: border-box;
+  padding: 60px 20px;
+  margin-bottom: 60px; 
+  background: #ffffff;  
+  border-radius: 0;         
+  box-shadow: none;
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  border-radius: 8px; 
   overflow: hidden;
+}
+
+#servicios .lista-servicios {
+  display: grid;
+  grid-template-columns: 1.8fr 2px 1.8fr 2px 1.8fr;   
+  gap: 40px;                         
+  justify-content: center;            
+  max-width: 1200px;                  
+  margin: 0 auto;                     
+  position: relative;
+}
+
+#servicios .lista-servicios ul {
+  list-style: disc;                   
+  padding-left: 25px;                 
+  margin: 0;
+}
+
+#servicios .lista-servicios li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #333;
+}
+
+#servicios .lista-servicios::before {
+  content: none;
+}
+
+#servicios .lista-servicios li b {
+  font-weight: bold;
+  color: #00a000;   
+}
+
+#servicios .lista-servicios .separador {
+  background: #00a000;
+  width: 6px;
+  border-radius: 50%/100%;
 }
 
 .imagen-seccion {
@@ -449,10 +549,9 @@ p b {
 
 .galeria-section {
   padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 60px auto;
   background: #f4f4f4;
-  margin-bottom: 60px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
@@ -518,13 +617,53 @@ p b {
   100% { transform: translateX(-50%); } 
 }
 
+.videos {
+  padding: 60px 20px;          
+  margin: 0 auto 60px auto;    
+  background: #f9f9f9;         
+  border-radius: 8px;          
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); 
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+.video-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid #00a000;   
+  display: block;
+}
+
+.videos h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #00a000;
+}
+
+.video-container h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  text-align: center;
+  font-size: 1.0em;
+  color: #00a000;
+  margin-bottom: 10px;
+}
+
 #cotizacion {
   background: #ffffff;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   max-width: 600px;
-  margin: 40px auto;
+  margin: 60px auto;
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
@@ -561,11 +700,12 @@ p b {
 
 #cotizacion button:hover {
   background: #007500;
+  transform: scale(1.02); 
 }
 
 #contacto {
   padding: 60px 20px;          
-  margin: 0 auto 30px auto;   
+  margin: 0 auto 60px auto;   
   background: #e8ffe8;         
   border-radius: 8px;          
   box-shadow: 0 2px 8px rgba(0,0,0,0.2); 
@@ -655,7 +795,7 @@ footer .redes a:hover {
 .logo-rotando {
   display: block;
   margin: 0 auto;
-  max-width: 120px; 
+  max-width: 200px; 
   height: auto; 
   animation: girar 16s linear infinite;
 }
